@@ -29,7 +29,8 @@
                 }  
                 
             }
-            $this->params = (count($url)>0) ? $url : "[home]";
+
+            $this->params = (count($url)>0) ? $url : ["home"];
 
             call_user_func_array([$this->controller,$this->method],$this->params);
         }

@@ -1,9 +1,10 @@
 <?php
 
-Class Home
+Class Home extends Controller
 {
-    public function index()
+    public function index($a='',$b='')
     {
-        echo "Home controller function";
+        
+       $this->view("home");
     }
 }
