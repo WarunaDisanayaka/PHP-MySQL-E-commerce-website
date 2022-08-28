@@ -1,5 +1,4 @@
 	<?php  $this->view("header",$data);?>
-
 	<section id="slider"><!--slider-->
 		<div class="container">
 			<div class="row">
