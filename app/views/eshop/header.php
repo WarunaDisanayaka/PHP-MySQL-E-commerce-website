@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
-    <link href="<?= ASSETS?>eshop/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= ASSETS?>eshop/css/font-awesome.min.css" rel="stylesheet">
-    <link href="<?= ASSETS?>eshop/css/prettyPhoto.css" rel="stylesheet">
-    <link href="<?= ASSETS?>eshop/css/price-range.css" rel="stylesheet">
-    <link href="<?= ASSETS?>eshop/css/animate.css" rel="stylesheet">
-	<link href="<?= ASSETS?>eshop/css/main.css" rel="stylesheet">
-	<link href="<?= ASSETS?>eshop/css/responsive.css" rel="stylesheet">
+    <title><?= $data['page_title']?> | E-Shopper</title>
+    <link href="<?= ASSETS .THEME?>css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?= ASSETS .THEME?>css/font-awesome.min.css" rel="stylesheet">
+    <link href="<?= ASSETS .THEME?>css/prettyPhoto.css" rel="stylesheet">
+    <link href="<?= ASSETS .THEME?>css/price-range.css" rel="stylesheet">
+    <link href="<?= ASSETS .THEME?>css/animate.css" rel="stylesheet">
+	<link href="<?= ASSETS .THEME?>css/main.css" rel="stylesheet">
+	<link href="<?= ASSETS .THEME?>css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?= ASSETS?>eshop/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= ASSETS?>eshop/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= ASSETS?>eshop/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="<?= ASSETS?>eshop/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?= ASSETS .THEME?>images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= ASSETS .THEME?>images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= ASSETS .THEME?>images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?= ASSETS .THEME?>images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
@@ -57,7 +57,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="<?= ASSETS?>eshop/images/home/logo.png" alt="" /></a>
+							<a href="index"><img src="<?= ASSETS .THEME?>images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 							<div class="btn-group">
@@ -90,7 +90,7 @@
 								<li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
 								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> Checkout</a></li>
 								<li><a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-								<li><a href="login.html"><i class="fa fa-lock"></i> Login</a></li>
+								<li><a href="login"><i class="fa fa-lock"></i> Login</a></li>
 							</ul>
 						</div>
 					</div>
