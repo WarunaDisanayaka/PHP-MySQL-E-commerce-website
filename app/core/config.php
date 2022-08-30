@@ -3,9 +3,11 @@
     define("WEBSITE_TITLE",'MY SHOP');
 
     //Database
-    define('DB_NAME',"ecom");
+    define('DB_NAME',"eshop");
     define('DB_USER',"root");
     define('DB_PASS',"");
+    define('DB_TYPE',"mysql");
+    define('DB_HOST',"localhost");
 
     define('THEME',"eshop/");
 
