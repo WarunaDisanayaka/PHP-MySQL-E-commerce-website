@@ -59,8 +59,6 @@
 
     $db = Database::getInstance();
 
-    $data=$db->read("describe users");
-
-    show($data);
+    
 
 ?>
