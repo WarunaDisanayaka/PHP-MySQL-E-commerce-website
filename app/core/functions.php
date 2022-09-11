@@ -6,4 +6,12 @@
         echo "</pre>";
     }
 
+    function chek_error()
+    {
+        if (isset($_SESSION['error']) && $_SESSION['error'] !="") 
+        {
+            echo $_SESSION['error'];
+            unset($_SESSION['error']);
+        }
+    }
 ?>

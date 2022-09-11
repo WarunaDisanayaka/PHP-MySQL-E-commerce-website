@@ -2,6 +2,9 @@
 
 	<section id="form"><!--form-->
 		<div class="container">
+			<div style="text-align:center; color: red;">
+			<span><?php chek_error()?></span>
+			</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<div class="signup-form"><!--sign up form-->

@@ -48,6 +48,8 @@
                     die;
                 }
             }
+
+            $_SESSION['error']=$this->error;
         }
 
         public function Login($POST)
