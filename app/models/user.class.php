@@ -7,6 +7,7 @@
         public function signup($POST)
         {
             $data = array();
+            $db= Database::getInstance();
 
             $data['username'] = trim($_POST['username']);
             $data['email']    = trim($_POST['email']);
@@ -33,6 +34,14 @@
                 $this->error .="Password must be atleast 4 characters long <br>";
             }
 
+            $sql="SELECT * FROM users WHERE email = :email limit 1";
+            $arr['email']=$data['email'];
+            $check=$db->read($sql,$arr);
+            if (is_array($check)) 
+            {
+                $this->error.="Email already registered";
+            }
+
             if ($this->error == "") 
             {
                 $data['rank'] = "customer";
@@ -40,7 +49,7 @@
                 $data['date'] = date("Y-m-d H:i:s");
 
                 $query = "INSERT INTO users(url_address,name,email,password,date,rank) VALUES(:url_address,:username,:email,:password,:date,:rank)";
-                $db= Database::getInstance();
+                
                 $result=$db->write($query,$data);
 
                 if ($result) {

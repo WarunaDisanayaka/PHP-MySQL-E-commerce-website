@@ -27,20 +27,21 @@
         }
 
         public function read($query,$data = array())
-        {
-            $stm = self::$con->prepare($query);
-            $result = $stm->execute();
+	{
 
-            if ($result) {
-            $data = $stm->fetchAll(PDO::FETCH_OBJ);
+		$stm = self::$con->prepare($query);
+		$result = $stm->execute($data);
 
-            if (is_array($data)) {
-                return $data;
-            }
-            }
-            return false;
+		if($result){
+			$data = $stm->fetchAll(PDO::FETCH_OBJ);
+			if(is_array($data) && count($data) > 0)
+			{
+				return $data;
+			}
+		}
 
-        }
+		return false;
+	}
 
 
         public function write($query,$data = array())
@@ -56,7 +57,7 @@
         }
 
     }
-
     
 
 ?>
+
