@@ -57,8 +57,6 @@
 
     }
 
-    $db = Database::getInstance();
-
     
 
 ?>
